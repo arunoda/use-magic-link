@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react'
-import EventEmitter from 'event-emitter'
+import EventEmitter from 'mitt'
 import unfetch from 'isomorphic-unfetch'
-import ms from 'ms'
 import { Sema } from 'async-sema'
 import loadMagicLink from './load-magic-link'
 
 const tokenSema = new Sema(1)
 const loggedInSema = new Sema(1)
 const loginEvents = new EventEmitter()
+
+const ONE_MINUTE = 1000 * 60;
 
 let currentLoginState = null
 let currentToken = null
@@ -51,10 +52,10 @@ async function isLoggedIn (magicLinkKey) {
   return currentLoginState
 }
 
-function setToken (token, lifespan = ms('15min')) {
+function setToken (token, lifespan = ONE_MINUTE * 15) {
   currentToken = {
     token,
-    expiredAt: Date.now() + lifespan - ms('1min')
+    expiredAt: Date.now() + lifespan - ONE_MINUTE
   }
 }
 

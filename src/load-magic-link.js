@@ -1,4 +1,4 @@
-import EventEmitter from 'event-emitter';
+import EventEmitter from 'mitt';
 
 const events = new EventEmitter();
 let MagicSDK = null;
