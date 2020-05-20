@@ -1,0 +1,26 @@
+{
+  "name": "use-magic-link",
+  "version": "1.0.0",
+  "source": "src/use-magic-link.js",
+  "main": "dist/use-magic-link.js",
+  "module": "dist/use-magic-link.module.js",
+  "unpkg": "dist/use-magic-link.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "microbundle": "^0.12.0",
+    "react": "^16.13.1"
+  },
+  "peerDependencies": {
+    "react": "^16.11.0"
+  },
+  "dependencies": {
+    "async-sema": "^3.1.0",
+    "event-emitter": "^0.3.5",
+    "isomorphic-unfetch": "^3.0.0",
+    "ms": "^2.1.2"
+  }
+}
