@@ -146,6 +146,7 @@ export default function useAuth (magicLinkKey) {
     login,
     logout,
     fetch,
-    loginEvents
+    loginEvents,
+    magic
   }
 }
