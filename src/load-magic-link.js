@@ -1,4 +1,4 @@
-import EventEmitter from 'mitt';
+import EventEmitter from 'event-emitter';
 
 const events = new EventEmitter();
 let MagicSDK = null;
@@ -16,7 +16,6 @@ export default async function loadMagicLink(key) {
     }
 
     if (!script) {
-        console.log('Loading Magic');
         script = window.document.createElement('script');
         script.async = true;
         script.src = 'https://cdn.jsdelivr.net/npm/magic-sdk/dist/magic.js';

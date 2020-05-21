@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import EventEmitter from 'mitt'
+import EventEmitter from 'event-emitter'
 import unfetch from 'isomorphic-unfetch'
 import { Sema } from 'async-sema'
 import loadMagicLink from './load-magic-link'
@@ -76,7 +76,7 @@ export default function useAuth (magicLinkKey) {
 
     try {
       const magic = await loadMagicLink(magicLinkKey);
-      const token = magic.auth.loginWithMagicLink({ email })
+      const token = await magic.auth.loginWithMagicLink({ email })
       currentLoginState = true
       setToken(token)
       loginEvents.emit('loggedIn', true)

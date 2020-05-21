@@ -2137,11 +2137,6 @@ minimist@^1.2.0, minimist@^1.2.5:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
 
-mitt@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/mitt/-/mitt-1.2.0.tgz#cb24e6569c806e31bd4e3995787fe38a04fdf90d"
-  integrity sha512-r6lj77KlwqLhIUku9UWYes7KJtsczvolZkzp8hbaDPPaE24OmWl5s539Mytlj22siEQKosZ26qCBgda2PKwoJw==
-
 mkdirp@~0.5.1:
   version "0.5.5"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.5.tgz#d91cefd62d1436ca0f41620e251288d420099def"
@@ -2159,7 +2154,7 @@ mri@^1.1.0:
   resolved "https://registry.yarnpkg.com/mri/-/mri-1.1.5.tgz#ce21dba2c69f74a9b7cf8a1ec62307e089e223e0"
   integrity sha512-d2RKzMD4JNyHMbnbWnznPaa8vbdlq/4pNZ3IgdaGrVbBhebBsGUUE/6qorTMYNS6TwuH3ilfOlD2bf4Igh8CKg==
 
-ms@^2.1.1, ms@^2.1.2:
+ms@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
