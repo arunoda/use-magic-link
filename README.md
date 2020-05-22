@@ -4,6 +4,8 @@ Simple auth setup for your React app in few minutes with [Magic Link](https://ma
 
 [Read this guide](https://arunoda.me/blog/simple-auth-setup-for-your-react-app)
 
+<a href="https://arunoda.me/blog/simple-auth-setup-for-your-react-app"><img src="https://img.youtube.com/vi/9kC24Mr0wHg/maxresdefault.jpg" width="600px"/></a>
+
 ## Install the React Hook
 
 ```
