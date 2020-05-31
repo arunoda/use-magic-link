@@ -12,6 +12,7 @@ const ONE_MINUTE = 1000 * 60;
 
 let currentLoginState = null
 let currentToken = null
+let magic = null
 
 if (typeof window !== 'undefined') {
   loadMagicLink()
@@ -24,7 +25,7 @@ async function getMagicToken (magicLinkKey) {
       return currentToken.token
     }
 
-    const magic = await loadMagicLink(magicLinkKey);
+    magic = await loadMagicLink(magicLinkKey);
     const token = await magic.user.getIdToken()
     setToken(token)
     return token
@@ -61,7 +62,7 @@ function setToken (token, lifespan = ONE_MINUTE * 15) {
 
 export default function useAuth (magicLinkKey) {
   if (!magicLinkKey) {
-    throw new Error('Magic Link publishableKey required as the first argument')  
+    throw new Error('Magic Link publishableKey required as the first argument')
   }
 
   const [loggedIn, setLoggedIn] = useState(currentLoginState !== null ? currentLoginState : false)
